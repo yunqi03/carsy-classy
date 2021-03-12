@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Data</title>
+    <script async type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" href="{{ url_for('styles') }}">
+  </head>
+  <body>
+    <button class="selectable" onclick="link('./New_record.html')"><p>Add car</p></button>
+    <button class="selectable" onclick="link('./Search_record.html')"><p>Search for car</p></button>
+    <table>
+      <tr><th>Registration</th><th>Make</th></tr>
+      {% for car in data %}
+      <tr><td>{{car[0]}}</td><td>{{car[1]}}</td>
+      {% endfor %}
+  </body>
+</html>
