@@ -1,9 +1,10 @@
 from Flask import *
+import sqlite3
 
-Flask(__name__)
+app = Flask(__name__)
 
-@app.run('/')
-def index(arg):
+@app.route('/', methods=["GET", "POST"])
+def index():
   render_template('index.html')
 
 if __name__ == '__main__':

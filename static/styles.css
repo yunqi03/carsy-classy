@@ -1,0 +1,35 @@
+.center {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  background-color: burlywood;
+}
+.datatable{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid rebeccapurple;
+  border-collapse: collapse;
+}
+
+tr:hover{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid crimson;
+  border-collapse: collapse;
+}
+
+.selectable{
+  background-color: darkkhaki;
+  border: 2px solid seagreen;
+  border-radius: 4px;
+  width: 20%;
+}
+
+.selectable:hover{
+  background-color: darksalmon;
+  border: 2px solid seagreen;
+  border-radius: 4px;
+  width: 20%;
+}
