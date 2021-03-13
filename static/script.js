@@ -1,3 +1,4 @@
+// basically href replacement for buttons
 function link(link){
     loadingpage();
     setTimeout(function(){
