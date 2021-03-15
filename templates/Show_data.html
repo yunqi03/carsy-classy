@@ -10,19 +10,30 @@
     <script type="text/javascript" src="../static/LESS.js" ></script>
 
   </head>
-  
+
   <body>
     <div class="center">
       <button class="selectable" onclick="link('./New_record.html')"><p>Add car</p></button>
       <button class="selectable" onclick="link('./Search_record.html')"><p>Search for car</p></button>
 
       <!--Main table-->
-      <table class="datatable">
-        <tr><th class="datatable">Registration</th><th class="datatable">Make</th></tr>
+      <div class="div-table">
         {% for car in data %}
-        <tr><td class="datatable">{{ car[0] }}</td><td class="datatable">{{ car[1] }}</td></tr>
+        <div class="div-table-row"><a class="datatable" href="{{ car[0] }}">
+          <div class="div-table-col">
+            {{ car[1] }}
+          </div>
+          <div class="div-table-col">
+            {{ car[2] }}
+          </div>
+          <div class="div-table-col">
+            {{ car[3] }}
+          </div>
+        </a></div>
         {% endfor %}
-      </table>
+      </div>
+
     </div>
+
   </body>
 </html>
