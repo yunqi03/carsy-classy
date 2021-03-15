@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>scroll animation test</title>
+    <script>
+
+      window.addEventListener("scroll", (event) => {
+        let scroll = this.scrollY;
+        var maxScroll = document.body.scrollHeight;
+        document.getElementById("test").innerHTML = (scroll/maxScroll)*100;
+      });
+    </script>
+
+  </head>
+
+  <body>
+    <p style="font-size:500px;">Your current scroll: (%)</p>
+    <p id="test" style="font-size:500px;"></p>
+  </body>
+</html>
